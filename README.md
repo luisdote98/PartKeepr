@@ -50,7 +50,7 @@ This version includes multiple improvements, developed and integrated by [Luis G
 
 ## 📦 Installation
 
-> Instructions to install this fork will be provided soon (Docker version + manual setup).
+> Instructions to install this fork will be provided soon (Docker version + guide included in the TFG file).
 
 ---
 
