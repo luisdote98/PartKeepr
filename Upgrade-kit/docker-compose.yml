@@ -68,7 +68,6 @@ services:
       - ./app:/var/www/html/app
       - ./web:/var/www/html/web
       - ./data:/var/www/html/data
-      #- ./config:/var/www/html/app/config
       - partkeepr-conf:/var/www/html/app/config
       #- partkeepr-data:/var/www/html/data
       #- partkeepr-web:/var/www/html/web
@@ -81,11 +80,6 @@ services:
     entrypoint: []
     command: bash -c "crontab /etc/cron.d/partkeepr && cron -f"
     volumes:
-      #- ./src:/var/www/html/src
-      #- ./app:/var/www/html/app
-      #- ./web:/var/www/html/web
-      #- ./data:/var/www/html/data
-      #- ./config:/var/www/html/app/config
       - partkeepr-conf:/var/www/html/app/config:ro
       - partkeepr-data:/var/www/html/data
       - partkeepr-web:/var/www/html/web
